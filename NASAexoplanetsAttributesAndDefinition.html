@@ -1,0 +1,870 @@
+<table border="1" class="dataframe" >
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Database Column Name</th>
+      <th>Table Label</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>pl_hostname</td>
+      <td>Host Star Name</td>
+      <td>Stellar name most commonly used in the literature.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>pl_letter</td>
+      <td>Planet Letter</td>
+      <td>Letter assigned to the planetary component of a planetary system.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>pl_name</td>
+      <td>Planet Name</td>
+      <td>Planet name most commonly used in the literature.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>pl_discmethod</td>
+      <td>Discovery Method</td>
+      <td>Method by which the planet was first identified.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>pl_controvflag</td>
+      <td>Controversial Flag</td>
+      <td>Flag indicating whether the confirmation status of a planet  has been questioned in the published literature (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>pl_pnum</td>
+      <td>Number of Planets in System</td>
+      <td>Number of planets in the planetary system.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>pl_orbper</td>
+      <td>Orbital Period (days)</td>
+      <td>Time the planet takes to make a complete  orbit around the host star or system.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>pl_orbsmax</td>
+      <td>Orbit Semi-Major Axis (AU)</td>
+      <td>The longest radius of an elliptic orbit,  or, for exoplanets detected via gravitational microlensing or direct imaging, the projected  separation in the plane of the sky.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>pl_orbeccen</td>
+      <td>Eccentricity</td>
+      <td>Amount by which the orbit of the planet  deviates from a perfect circle.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>pl_orbincl</td>
+      <td>Inclination (deg)</td>
+      <td>Angular distance of the orbital plane from the line of sight.</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>pl_bmassj</td>
+      <td>Planet Mass or M*sin(i) [Jupiter mass]</td>
+      <td>Best planet mass estimate available, in order of preference:  Mass, M*sin(i)/sin(i), or M*sin(i), depending on availability,  and measured in Jupiter masses. See Planet Mass M*sin(i)  Provenance (pl_bmassprov) to determine which measure applies.</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>pl_bmassprov</td>
+      <td>Planet Mass or M*sin(i) Provenance</td>
+      <td>Provenance of the measurement of the best mass.  Options are: Mass, M*sin(i)/sin(i), and M*sini.</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>pl_radj</td>
+      <td>Planet Radius (Jupiter radii)</td>
+      <td>Length of a line segment from the center of the planet  to its surface, measured in units of radius of Jupiter.</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>pl_dens</td>
+      <td>Planet Density (g/cm**3)</td>
+      <td>Amount of mass per unit of volume of the planet.</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>pl_ttvflag</td>
+      <td>TTV Flag</td>
+      <td>Flag indicating if the planet orbit exhibits  transit timing variations from another planet in the system (1=yes, 0=no).Note:Non-transiting planets discovered via the transit timing variations of another planet in the system will not have their TTV flag set, since they do not themselves demonstrate TTVs.</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>pl_kepflag</td>
+      <td>Kepler Field Flag</td>
+      <td>Flag indicating if the planetary system  signature is present in data taken with  the Kepler mission (1=yes, 0=no).</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>pl_k2flag</td>
+      <td>K2 Mission Flag</td>
+      <td>Flag indicating if the planetary system  signature is present in data taken with  the K2 Mission (1=yes, 0=no).</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>pl_nnotes</td>
+      <td>Number of Notes</td>
+      <td>Number of Notes associated with the planet.  View all notes in the Confirmed Planet Overview page.</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>ra_str</td>
+      <td>RA (sexagesimal)</td>
+      <td>Right Ascension of the planetary system in sexagesimal format.</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>dec_str</td>
+      <td>Dec (sexagesimal)</td>
+      <td>Declination of the planetary system in sexagesimal notation.</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>ra</td>
+      <td>RA (decimal degrees)</td>
+      <td>Right Ascension of the planetary system in decimal degrees.</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>dec</td>
+      <td>Dec (decimal degrees)</td>
+      <td>Declination of the planetary system in decimal degrees.</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>st_dist</td>
+      <td>Distance (pc)</td>
+      <td>Distance to the planetary system in units of parsecs.</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>gaia_dist</td>
+      <td>GaiaDistance [pc]</td>
+      <td>Distance computed fromGaiaparallax.</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>st_optmag</td>
+      <td>Optical Magnitude [mag]</td>
+      <td>Brightness of the host star as measured using  the V (Johnson) or the Kepler-band in units of  magnitudes.</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>st_optband</td>
+      <td>Optical Magnitude Band</td>
+      <td>Band corresponding to the Optical Magnitude.  Options are: V (Johnson) or Kepler-band.</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>gaia_gmag</td>
+      <td>G-band (Gaia) [mag]</td>
+      <td>Brightness of the host star as measuring using  theGaiaband in units of magnitudes. Objects matched toGaiausing the Hipparcos or 2MASS IDs provided inGaiaDR2.</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>st_teff</td>
+      <td>Effective  Temperature (K)</td>
+      <td>Temperature of the star as modeled by a  black body emitting the same total amount  of electromagnetic radiation.</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>st_mass</td>
+      <td>Stellar Mass (solar mass)</td>
+      <td>Amount of matter contained in the star,  measured in units of masses of the Sun.</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>st_rad</td>
+      <td>Stellar Radius (solar radii)</td>
+      <td>Length of a line segment from the center of the star  to its surface, measured in units of radius of the Sun.</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>rowupdate</td>
+      <td>Date of Last Update</td>
+      <td>Date of last update of the planet parameters.</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>pl_facility</td>
+      <td>Discovery Facility</td>
+      <td>Name of facility of planet discovery observations</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>pl_tranflag</td>
+      <td>Planet Transit Flag</td>
+      <td>Flag indicating if the planet transits its host star (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>pl_rvflag</td>
+      <td>Planet RV Flag</td>
+      <td>Flag indicating if the planet host star exhibits radial  velocity variations due to the planet (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>pl_imgflag</td>
+      <td>Planet Imaging Flag</td>
+      <td>Flag indicating if the planet has been  observed via imaging techniques (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>pl_astflag</td>
+      <td>Planet Astrometry Flag</td>
+      <td>Flag indicating if the planet host star exhibits  astrometrical variations due to the planet (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>pl_omflag</td>
+      <td>Orbital Modulation Flag</td>
+      <td>Flag indicating whether the planet exhibits orbital  modulations on the phase curve (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>pl_cbflag</td>
+      <td>Circumbinary Flag</td>
+      <td>Flag indicating whether the planet orbits a binary system (1=yes, 0=no)</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>pl_angsep</td>
+      <td>Calculated Angular Separation [mas]</td>
+      <td>The calculated angular separation (semi-major axis/distance) between the star and the planet. This value is only calculated  for systems with both a semi-major axis and a distance value.</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>pl_orbtper</td>
+      <td>Time of Periastron (Julian Days)</td>
+      <td>The time at which the orbiting body is at its closest  approach to the star it orbits (i.e. is at periastron).</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>pl_orblper</td>
+      <td>Longitude of Periastron (deg)</td>
+      <td>The angular separation between the ascending node of  the orbit and the location in the orbit of periastron.</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>pl_rvamp</td>
+      <td>Radial Velocity Amplitude [m/s]</td>
+      <td>Half the peak-to-peak amplitude of variability  in the stellar radial velocity.</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>pl_eqt</td>
+      <td>Planet Equilibrium Temperature [K]</td>
+      <td>The equilibrium temperature of the planet as modeled by a black body heated only by its host star, or for directly imaged planets, the effective temperature of the planet required to match the measured luminosity if the planet were a black body.</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>pl_insol</td>
+      <td>Insolation Flux [Earth flux]</td>
+      <td>Insolation flux is another way to give the equilibrium temperature. It's given in units relative to those measured for the Earth from the Sun.</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>pl_massj</td>
+      <td>Planet Mass (Jupiter mass)</td>
+      <td>Amount of matter contained in the planet,  measured in units of masses of Jupiter.</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>pl_msinij</td>
+      <td>Planet M*sin(i) (Jupiter mass)</td>
+      <td>Minimum mass of a planet as measured by radial  velocity, measured in units of masses of Jupiter.</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>pl_masse</td>
+      <td>Planet Mass (Earth mass)</td>
+      <td>Amount of matter contained in the planet,  measured in units of masses of the Earth.</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>pl_msinie</td>
+      <td>Planet M*sini(i) [Earth mass]</td>
+      <td>Minimum mass of a planet as measured by radial  velocity, measured in units of masses of Earth.</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>pl_bmasse</td>
+      <td>Planet Mass or M*sin(i) [Earth mass]</td>
+      <td>Best planet mass estimate available, in order of preference:  Mass, M*sin(i)/sin(i), or M*sin(i), depending on availability,  and measured in Earth masses. See Planet Mass M*sin(i)  Provenance (pl_bmassprov) to determine which measure applies.</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>pl_rade</td>
+      <td>Planet Radius (Earth radii)</td>
+      <td>Length of a line segment from the center of the planet to  its surface, measured in units of radius of the Earth.</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>pl_rads</td>
+      <td>Planet Radius (solar)</td>
+      <td>Length of a line segment from the center of the planet  to its surface, measured in units of radius of the Sun.</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>pl_trandep</td>
+      <td>Transit Depth (percentage)</td>
+      <td>The size of the relative flux decrement caused by  the orbiting body transiting in front of the star.</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>pl_trandur</td>
+      <td>Transit Duration (days)</td>
+      <td>The length of time from the moment the planet begins to  cross the stellar limb to the moment the planet finishes crossing the stellar limb.</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>pl_tranmid</td>
+      <td>Transit Midpoint (Julian days)</td>
+      <td>The time given by the average of the time the planet  begins to cross the stellar limb and the time the  planet finishes crossing the stellar limb.</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>pl_tsystemref</td>
+      <td>Time System Reference</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>pl_imppar</td>
+      <td>Impact Parameter</td>
+      <td>The sky-projected distance between the center of the stellar disc and the center of the planet disc at conjunction, normalized by the stellar radius.</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>pl_occdep</td>
+      <td>Occultation Depth</td>
+      <td>Depth of occultation of secondary eclipse</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>pl_ratdor</td>
+      <td>Planet-Star Distance over Star Radius</td>
+      <td>The distance between the planet and the star at  mid-transit divided by the stellar radius. For  the case of zero orbital eccentricity, the distance  at mid-transit is the semi-major axis of the planetary orbit.</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>pl_ratror</td>
+      <td>Planet-Star Radius Ratio</td>
+      <td>The planet radius divided by the stellar radius</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>pl_def_refname</td>
+      <td>Default Reference</td>
+      <td>Reference for publication used for default parameter</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>pl_disc</td>
+      <td>Year of Discovery</td>
+      <td>Year the planet was discovered</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>pl_disc_refname</td>
+      <td>Discovery Reference</td>
+      <td>Reference name for discovery publication</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>pl_locale</td>
+      <td>Discovery Locale</td>
+      <td>Location of observation of planet discovery (Ground or Space)</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>pl_telescope</td>
+      <td>Discovery Telescope</td>
+      <td>Name of telescope of planet discovery observations</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>pl_instrument</td>
+      <td>Discovery Instrument</td>
+      <td>Name of instrument of planet discovery observations</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>pl_status</td>
+      <td>Status</td>
+      <td>Status of the planet  (1 = announced,  2 = submitted,  3 = accepted,  0 = retracted).</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>pl_mnum</td>
+      <td>Number of Moons in System</td>
+      <td>Number of moons detected in the planetary system.</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>pl_st_npar</td>
+      <td>Number of Stellar and Planet Parameters</td>
+      <td>Number of Stellar and Planet Parameters</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>pl_st_nref</td>
+      <td>Number of Stellar and Planet References</td>
+      <td>Number of Stellar and Planet References</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>pl_pelink</td>
+      <td>Link to Exoplanet Encyclopaedia</td>
+      <td>It links to the planet page in the Exoplanet Encyclopaedia.</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>pl_edelink</td>
+      <td>Link to Exoplanet Data Explorer</td>
+      <td>It links to the planet page in Exoplanet Data Explorer.</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>pl_publ_date</td>
+      <td>Publication Date</td>
+      <td>Publication Date of the planet discovery referee publication.</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>hd_name</td>
+      <td>HD Name</td>
+      <td>Name of the star as given by the Henry Draper Catalog.</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>hip_name</td>
+      <td>HIP Name</td>
+      <td>Name of the star as given by the Hipparcos Catalog.</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>st_rah</td>
+      <td>RA (hours)</td>
+      <td>Right Ascension of the planetary  system in decimal hours.</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>st_glon</td>
+      <td>Galactic Longitude (deg)</td>
+      <td>Galactic longitude of the planetary  system in units of decimal degrees.</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>st_glat</td>
+      <td>Galactic Latitude (deg)</td>
+      <td>Galactic latitude of the planetary  system in units of decimal degrees.</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>st_elon</td>
+      <td>Ecliptic Longitude (deg)</td>
+      <td>Ecliptic longitude of the planetary  system in units of decimal degrees.</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>st_elat</td>
+      <td>Ecliptic Latitude (deg)</td>
+      <td>Ecliptic latitude of the planetary  system in units of decimal degrees.</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>st_plx</td>
+      <td>Parallax (mas)</td>
+      <td>Difference in the angular position of a star  as measured at two opposite positions within  the Earth's orbit.</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>gaia_plx</td>
+      <td>GaiaParallax [mas]</td>
+      <td>GaiaDR2 difference in the angular position  of a star as measured at two opposite positions  within the Earth's orbit.</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>st_pmra</td>
+      <td>RA Proper Motion (mas/yr)</td>
+      <td>Angular change in right ascension over time as  seen from the center of mass of the Solar System.</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>st_pmdec</td>
+      <td>Dec Proper Motion (mas/yr)</td>
+      <td>Angular change in declination over time as seen  from the center of mass of the Solar System.</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>st_pm</td>
+      <td>Total Proper Motion  (mas/yr)</td>
+      <td>Angular change in position over time as seen  from the center of mass of the Solar System.</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>gaia_pmra</td>
+      <td>GaiaProper Motion (RA) [mas/yr]</td>
+      <td>GaiaDR2 angular change in right ascension  over time as seen from the center of mass of the Solar System.</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>gaia_pmdec</td>
+      <td>GaiaProper Motion (Dec) [mas/yr]</td>
+      <td>GaiaDR2 angular change in declination over time  as seen from the center of mass of the Solar System.</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>gaia_pm</td>
+      <td>GaiaTotal Proper Motion [mas/yr]</td>
+      <td>GaiaDR2 total proper motion computed from the RA and Dec.</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>st_radv</td>
+      <td>Radial Velocity (km/sec)</td>
+      <td>Velocity of the star in the  direction of the line of sight.</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>st_spstr</td>
+      <td>Spectral Type</td>
+      <td>Classification of the star based  on their spectral characteristics  following the Morgan-Keenan system.</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>st_logg</td>
+      <td>Stellar Surface Gravity</td>
+      <td>Gravitational acceleration experienced at the stellar surface.</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>st_lum</td>
+      <td>Stellar Luminosity [log(solar)]</td>
+      <td>Amount of energy emitted by a star per unit  time, measured in units of solar luminosities.</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>st_dens</td>
+      <td>Stellar Density [g/cm**3]</td>
+      <td>Amount of mass per unit of volume of the star.</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>st_metfe</td>
+      <td>Stellar Metallicity (dex)</td>
+      <td>Measurement of the metal content  of the photosphere of the star as compared to the hydrogen content.</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>st_metratio</td>
+      <td>Metallicity Ratio</td>
+      <td>Ratio for the Metallicity Value  ([Fe/H] denotes iron abundance,  [M/H] refers to a general metal content)</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>st_age</td>
+      <td>Stellar Age [Gyr]</td>
+      <td>The age of the host star.</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>st_vsini</td>
+      <td>Rotational Velocity v*sin(i) [km/s]</td>
+      <td>Rotational velocity at the equator  of the star multiplied by the sine  of the inclination.</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>st_acts</td>
+      <td>Stellar Activity Index (S-Index)</td>
+      <td>Chromospheric activity as measured by the  S-index (ratio of the emission of the H  and K Ca lines to that in nearby continuum).</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>st_actr</td>
+      <td>Stellar Activity Log (R'HK)</td>
+      <td>Chromospheric activity as measured by  the log(R' HK) index, with is based  on the S-index, but excludes the  photospheric component in the Ca lines.</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>st_actlx</td>
+      <td>x-ray Activity (Lx)"</td>
+      <td>Stellar activity as measured by  the total luminosity in X-rays.</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>swasp_id</td>
+      <td>SWASP Identifier</td>
+      <td>Name of the star as given by the SuperWASP  (Wide Angle Search for Planets) project.</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>st_nts</td>
+      <td>Number of Time Series</td>
+      <td>Number of literature time series available  for this star in the NASA Exoplanet Archive</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>st_nplc</td>
+      <td>Number of Planet Transit Light Curves</td>
+      <td>Number of literature transit light curves available  for this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>st_nglc</td>
+      <td>Number of General Light Curves</td>
+      <td>Number of Hipparcos light curves available  for this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>st_nrvc</td>
+      <td>Number of Radial Velocity Time Series</td>
+      <td>Number of literature radial velocity curves available  for this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>st_naxa</td>
+      <td>Number of Amateur Light Curves</td>
+      <td>Number of literature amateur light curves available  for this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>st_nimg</td>
+      <td>Number of Images</td>
+      <td>Number of literature images available for  this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>st_nspec</td>
+      <td>Number of Spectra</td>
+      <td>Number of literature of spectra available for  this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>st_uj</td>
+      <td>U-band (Johnson) [mag]</td>
+      <td>Brightness of the host star as measured using  the U (Johnson) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>st_vj</td>
+      <td>V-band (Johnson) [mag]</td>
+      <td>Brightness of the host star as measured using  the V (Johnson) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>st_bj</td>
+      <td>B-band (Johnson) [mag]</td>
+      <td>Brightness of the host star as measured using  the B (Johnson) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>st_rc</td>
+      <td>R-band (Cousins) [mag]</td>
+      <td>Brightness of the host star as measured using the  R (Cousins) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>st_ic</td>
+      <td>I-band (Cousins) [mag]</td>
+      <td>Brightness of the host star as measured using the  I (Cousins) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>st_j</td>
+      <td>J-band (2MASS) [mag]</td>
+      <td>Brightness of the host star as measured using the  J (2MASS) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>st_h</td>
+      <td>H-band (2MASS) [mag]</td>
+      <td>Brightness of the host star as measured using the  H (2MASS) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>st_k</td>
+      <td>Ks-band (2MASS) [mag]</td>
+      <td>Brightness of the host star as measured using the  K (2MASS) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>st_wise1</td>
+      <td>WISE 3.4um [mag]</td>
+      <td>Brightness of the host star as measured using the 3.4um (WISE) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>st_wise2</td>
+      <td>WISE 4.6um [mag]</td>
+      <td>Brightness of the host star as measured using the 4.6um (WISE) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>st_wise3</td>
+      <td>WISE 12.um [mag]</td>
+      <td>Brightness of the host star as measured using the 12.um (WISE) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>st_wise4</td>
+      <td>WISE 22.um [mag]</td>
+      <td>Brightness of the host star as measured using the 22.um (WISE) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>st_irac1</td>
+      <td>IRAC 3.6um [mag]</td>
+      <td>Brightness of the host star as measured using  the 3.6um (IRAC) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>st_irac2</td>
+      <td>IRAC 4.5um [mag]</td>
+      <td>Brightness of the host star as measured using  the 4.5um (IRAC) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>st_irac3</td>
+      <td>IRAC 5.8um [mag]</td>
+      <td>Brightness of the host star as measured using  the 5.8um (IRAC) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>st_irac4</td>
+      <td>IRAC 8.0um [mag]</td>
+      <td>Brightness of the host star as measured using  the 8.0um (IRAC) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>st_mips1</td>
+      <td>MIPS 24um [mag]</td>
+      <td>Brightness of the host star as measured using  the 24um (MIPS) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>st_mips2</td>
+      <td>MIPS 70um [mag]</td>
+      <td>Brightness of the host star as measured using  the 70um (MIPS) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>st_mips3</td>
+      <td>MIPS 160um [mag]</td>
+      <td>Brightness of the host star as measured using  the 160um (MIPS) band in units of magnitudes.</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>st_iras1</td>
+      <td>IRAS 12um [Jy]</td>
+      <td>Brightness of the host star as measured  using the 12um (IRAS) band in units of Jy.</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>st_iras2</td>
+      <td>IRAS 25um [Jy]</td>
+      <td>Brightness of the host star as measured  using the 25um (IRAS) band in units of Jy.</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>st_iras3</td>
+      <td>IRAS 60um [Jy]</td>
+      <td>Brightness of the host star as measured  using the 60um (IRAS) band in units of Jy.</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>st_iras4</td>
+      <td>IRAS 100um [Jy]</td>
+      <td>Brightness of the host star as measured  using the 100um (IRAS) band in units of Jy.</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>st_photn</td>
+      <td>Number of Photometry Measurements</td>
+      <td>Number of photometry measurements available  for this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>st_umbj</td>
+      <td>U-B (Johnson) [mag]</td>
+      <td>Color of the star as measured by the  difference between U and B (Johnson) bands.</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>st_bmvj</td>
+      <td>B-V (Johnson) [mag]</td>
+      <td>Color of the star as measured by the  difference between B and V (Johnson) bands.</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>st_vjmic</td>
+      <td>V-I (Johnson-Cousins) [mag]</td>
+      <td>Color of the star as measured by the difference  between V (Johnson) and I (Cousins) bands.</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>st_vjmrc</td>
+      <td>V-R (Johnson-Cousins) [mag]</td>
+      <td>Color of the star as measured by the difference between V (Johnson) and R (Cousins) bands.</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>st_jmh2</td>
+      <td>J-H (2MASS) [mag]</td>
+      <td>Color of the star as measured by the  difference between J and H (2MASS) bands.</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>st_hmk2</td>
+      <td>H-Ks (2MASS) [mag]</td>
+      <td>Color of the star as measured by the  difference between H and K (2MASS) bands.</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>st_jmk2</td>
+      <td>J-Ks  (2MASS) [mag]</td>
+      <td>Color of the star as measured by the  difference between K and K (2MASS) bands.</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>st_bmy</td>
+      <td>b-y (Stromgren) [mag]</td>
+      <td>Color of the star as measured by the difference  between b and y (Stromgren) bands.</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>st_m1</td>
+      <td>m1 (Stromgren) [mag]</td>
+      <td>Color of the star as measured by  the m1 (Stromgren) system.</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>st_c1</td>
+      <td>c1 (Stromgren) [mag]</td>
+      <td>Color of the star as measured  by the c1 (Stromgren) system.</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>st_colorn</td>
+      <td>Number of Color Measurements</td>
+      <td>Number of color measurements available  for this star in the NASA Exoplanet Archive.</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
