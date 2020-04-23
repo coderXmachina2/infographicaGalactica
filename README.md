@@ -7,6 +7,6 @@ Visualization of NASA exoplanet data.
   
   <img src="/Vissies/t01DiscoveryOfExoplanetsOverTime.png" alt="Exoplanets discovered over time">
   <img src="/Vissies/t02rangeOfMassOfExoPlanets.png" alt="Masses of exoplanets">
-  <img src="/Vissies/t01DiscoveryOfExoplanetsOverTime.png" alt="Exoplanets discovered over time">
+  <img src="/Vissies/t04rangeOfKNownTemperaturesOfExoplanets.png" alt="Exoplanets discovered over time">
   
 </html>
