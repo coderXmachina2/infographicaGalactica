@@ -21,6 +21,10 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/orbital_period_log10.png" alt="Orbital Period per solar system log 10">
    <p>Their orbital periods can vary from some value to some value. Some exhibit retrograde motion. There is one planet where a year lasts seven million days.</p>
    
+  <img src="/Vissies/pl_Semi_maj_axis_AU.png" alt="Semi Major axis in AU">
+  <img src="/Vissies/pl_Semi_maj_axis_AU_log10.png" alt="Semi Major axis in AU log 10">
+   <p>The semi major axis can vary from some value to some values.</p>
+   
    
 
    <p>Planets Semi major Axis in astronomical Units.</p>
