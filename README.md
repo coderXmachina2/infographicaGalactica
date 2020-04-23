@@ -17,8 +17,11 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/Planets_per_solar_system.png" alt="Planets per solar system">
    <p>Some extrasolar systems have more planets, some have less. On average they have more than one.</p>
 
-  <img src="/Vissies/orbital_period.png" alt="Planets per solar system">
+  <img src="/Vissies/orbital_period.png" alt="Orbital Period per solar system">
+  <img src="/Vissies/orbital_period_log10.png" alt="Orbital Period per solar system log 10">
    <p>Their orbital periods can vary from some value to some value. Some exhibit retrograde motion. There is one planet where a year lasts seven million days.</p>
+   
+   
 
    <p>Planets Semi major Axis in astronomical Units.</p>
    
