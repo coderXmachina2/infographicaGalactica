@@ -21,7 +21,7 @@ Visualization of NASA exoplanet data.
 
   <img src="/Vissies/orbital_period.png" alt="Orbital Period per solar system">
   <img src="/Vissies/orbital_period_log10.png" alt="Orbital Period per solar system log 10">
-   <p>Their orbital periods can vary from some value to some value. Some exhibit retrograde motion. There is one planet where a year lasts seven million days. We start seeing common clusters in the data.</p>
+   <p>Their orbital periods can vary from 0 value to 500 days. Some exhibit retrograde motion. There is one planet where a year lasts seven million days. We start seeing common clusters in the data.</p>
    
   <img src="/Vissies/pl_Semi_maj_axis_AU.png" alt="Semi Major axis in AU">
   <img src="/Vissies/pl_Semi_maj_axis_AU_log10.png" alt="Semi Major axis in AU log 10">
