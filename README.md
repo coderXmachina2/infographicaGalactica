@@ -48,6 +48,11 @@ Visualization of NASA exoplanet data.
    
   <img src="/Vissies/t04rangeOfKNownTemperaturesOfExoplanets.png" alt="Exoplanets discovered over time">
   
-    <p><b>Earth Similarity Index</b></p>
+  <p><b>Planetary Mass</b></p>
+  
+  
+  <p><b>Planetary Radius</b></p>
+  
+    <p><b>Earth Similarity Index... Coming Soon</b></p>
   
 </html>
