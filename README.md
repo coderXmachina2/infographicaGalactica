@@ -19,7 +19,7 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/Planets_per_solar_system.png" alt="Planets per solar system">
    <p>Some extrasolar systems have more planets than others, some have less. On average they have more than one.</p>
 
-  <img src="/Vissies/orbital_period_log10_grid.png" alt="Orbital Period per solar system">
+  <img src="/Vissies/orbital_period.png" alt="Orbital Period per solar system">
   <p>A linear scale does not reveal much. We have to go logarithmic.</p>
   <img src="/Vissies/sorted_orbital_period_log10.png" alt="Orbital Period per solar system log 10">
   
@@ -28,7 +28,7 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/pl_Semi_maj_axis_AU.png" alt="Semi Major axis in AU">
   <img src="/Vissies/pl_Semi_maj_axis_AU_log10.png" alt="Semi Major axis in AU log 10">
   
-   <p>Planets Semi major Axis in astronomical Units.</p>
+   <p>Exo planets Semi major Axis in astronomical Units.</p>
   
    <p>The semi major axis can vary from some value to some values.</p>
    
