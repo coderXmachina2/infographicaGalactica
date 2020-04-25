@@ -19,7 +19,7 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/Planets_per_solar_system.png" alt="Planets per solar system">
    <p>Some extrasolar systems have more planets than others, some have less. On average they have more than one.</p>
    
-   <p><bold>Exoplanet orbital period</bold></p>
+   <p><b>Exoplanet orbital period</b></p>
 
   <img src="/Vissies/orbital_period.png" alt="Orbital Period per solar system">
   <p>A linear scale does not reveal much. We have to go logarithmic.</p>
