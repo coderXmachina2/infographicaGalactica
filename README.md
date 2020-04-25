@@ -19,9 +19,9 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/Planets_per_solar_system.png" alt="Planets per solar system">
    <p>Some extrasolar systems have more planets than others, some have less. On average they have more than one.</p>
 
-  <img src="/Vissies/orbital_period.png" alt="Orbital Period per solar system">
+  <img src="/Vissies/orbital_period_log10_grid.png" alt="Orbital Period per solar system">
   <p>A linear scale does not reveal much. We have to go logarithmic.</p>
-  <img src="/Vissies/orbital_period_log10.png" alt="Orbital Period per solar system log 10">
+  <img src="/Vissies/sorted_orbital_period_log10.png" alt="Orbital Period per solar system log 10">
   
    <p>Their orbital periods can vary from 0 value to 500 days. Some exhibit retrograde motion. There is one planet where a year lasts seven million days. We start seeing common clusters in the data.</p>
    
