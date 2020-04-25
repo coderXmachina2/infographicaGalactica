@@ -50,9 +50,14 @@ Visualization of NASA exoplanet data.
   
   <p><b>Planetary Mass</b></p>
   
+  <img src="/Vissies/planet_mass_measure_log10.png" alt="Exoplanets discovered over time">  
   
   <p><b>Planetary Radius</b></p>
   
-    <p><b>Earth Similarity Index... Coming Soon</b></p>
+  <img src="/Vissies/planet_Radii_Jupiter_Radii.png" alt="Exoplanets discovered over time">
+  
+  <img src="/Vissies/t04rangeOfKNownTemperaturesOfExoplanets.png" alt="Exoplanets discovered over time">
+  
+  <p><b>Earth Similarity Index... Coming Soon</b></p>
   
 </html>
