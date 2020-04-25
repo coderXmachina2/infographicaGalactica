@@ -45,16 +45,14 @@ Visualization of NASA exoplanet data.
    <img src="/Vissies/orbital_inclination.png" alt="Inclination">
    
   <p>Most inclinations are edge on because their methods of discovery rely on edge on systems for easier detectability</p>
-   
-  <img src="/Vissies/t04rangeOfKNownTemperaturesOfExoplanets.png" alt="Exoplanets discovered over time">
-  
+     
   <p><b>Planetary Mass</b></p>
   
   <img src="/Vissies/planet_mass_measure_log10.png" alt="Exoplanets discovered over time">  
   
   <p><b>Planetary Radius</b></p>
   
-  <img src="/Vissies/planet_Radii_Jupiter_Radii.png" alt="Exoplanets discovered over time">
+  <img src="/Vissies/planet_Radii_Jupiter_Radii_log_10.png" alt="Exoplanets discovered over time">
   
   <img src="/Vissies/t04rangeOfKNownTemperaturesOfExoplanets.png" alt="Exoplanets discovered over time">
   
