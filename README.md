@@ -28,9 +28,7 @@ Visualization of NASA exoplanet data.
   <img src="/Vissies/pl_Semi_maj_axis_AU.png" alt="Semi Major axis in AU">
   <img src="/Vissies/pl_Semi_maj_axis_AU_log10.png" alt="Semi Major axis in AU log 10">
   
-   <p>Exo planets Semi major Axis in astronomical Units.</p>
-  
-   <p>The semi major axis can vary from some value to some values.</p>
+   <p>Exo planets Semi major Axis in astronomical Units. Semi major axis can vary from some value to some values 0.01 to 100 AU</p>
    
   <img src="/Vissies/orbital_eccentricity.png" alt="Eccentricity">
   
