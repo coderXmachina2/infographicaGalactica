@@ -4,7 +4,7 @@ Visualization of NASA exoplanet data.
 <html>
   <h1> Welcome to the infographica project </h1>
   <p>The ongoing search for exoplanets is an awesome  mission for mankind to embark on. Hopefully it may shed light on the possibility of extraterrestrial life somewhere in the Universe.</p>
-  <p>This side project attempts to visualize the data from Nasa's exoplanet database to put the search for extrasolar planets a little bit more into perspective. The endgame is to hopefully perfrom more statistical analysis on the data to gain additional insight</p>
+  <p>This side project attempts to visualize the data from Nasa's exoplanet database to put the search for extrasolar planets a little bit more into perspective. The endgame is to hopefully perfrom more statistical analysis on the data to gain additional insight.</p>
   
   <img src="/Vissies/t01DiscoveryOfExoplanetsOverTime.png" alt="Exoplanets discovered over time">
   
