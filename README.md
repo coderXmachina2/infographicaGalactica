@@ -17,7 +17,7 @@ Visualization of NASA exoplanet data.
   <p>Planets have been discovered using various methods. Transit photometry has been the most effective method of discovering extrasolar planets.</p>
   
   <img src="/Vissies/Planets_per_solar_system.png" alt="Planets per solar system">
-   <p>Some extrasolar systems have more planets, some have less. On average they have more than one.</p>
+   <p>Some extrasolar systems have more planets than others, some have less. On average they have more than one.</p>
 
   <img src="/Vissies/orbital_period.png" alt="Orbital Period per solar system">
   <img src="/Vissies/orbital_period_log10.png" alt="Orbital Period per solar system log 10">
