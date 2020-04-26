@@ -54,8 +54,15 @@ Visualization of NASA exoplanet data.
   
   <img src="/Vissies/planet_Radii_Jupiter_Radii_log_10.png" alt="Exoplanets discovered over time">
   
-  <img src="/Vissies/t04rangeOfKNownTemperaturesOfExoplanets.png" alt="Exoplanets discovered over time">
+  <p><b>Planetary equivalent Temperature</b></p>
+  
+  <img src="/Vissies/planet_equilibrium_temperature.png" alt="Exoplanets discovered over time">
+  <img src="/Vissies/planet_equilibrium_temperature_sorted.png" alt="Exoplanets discovered over time">
   
   <p><b>Earth Similarity Index... Coming Soon</b></p>
+  <p>Radius</p>
+  <p>Density</p>
+  <p>Temperature</p>
+  <p>Escape Velocity</p>
   
 </html>
